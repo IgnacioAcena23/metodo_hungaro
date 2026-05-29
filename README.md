@@ -36,6 +36,7 @@ El sistema requiere una clave de API de Groq para habilitar el botón de anális
 
 1. En la raíz del proyecto (junto a `met_hungaro.py` y `groq_client.py`), crea un archivo de texto llamado `.env`.
 2. Añade tu API Key de Groq siguiendo el formato de clave-valor exacto:
-```GROQ_API_KEY=tu_clave_aqui
-``` 
+```
+GROQ_API_KEY=tu_clave_aqui
+```
 3. Guarda el archivo. El módulo `groq_client.py` se encargará de cargar esta variable de entorno automáticamente al ejecutar la aplicación.
