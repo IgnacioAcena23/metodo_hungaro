@@ -2,10 +2,6 @@ import tkinter as tk
 from tkinter import ttk, messagebox, font as tkfont
 import groq_client
 
-# =========================================================
-#          ALGORITMO DEL METODO HUNGARO (sin librerias)
-# =========================================================
-
 def metodo_hungaro(matriz_costos, maximizar=False):
     n = len(matriz_costos)
     if n == 0:
@@ -168,11 +164,6 @@ def metodo_hungaro(matriz_costos, maximizar=False):
             costo_total += costo_original[i][j]
     return resultado, costo_total, pasos
 
-
-# =========================================================
-#              INTERFAZ GRAFICA CON TKINTER
-# =========================================================
-
 # --- Paleta de colores ---
 BG_DARK = "#1a1b2e"
 BG_PANEL = "#232540"
@@ -193,7 +184,6 @@ HIGHLIGHT = "#ffdd57"
 HIGHLIGHT_BG = "#3d3a20"
 ROW_HEADER_BG = "#2e2554"
 COL_HEADER_BG = "#1e3a4a"
-
 
 class HungaroApp:
     def __init__(self, root):
@@ -670,11 +660,6 @@ class HungaroApp:
         self.result_text.insert("end", "\n" + "─" * 34 + "\n", "info")
         self.result_text.configure(state="disabled")
         self.result_text.see("end")
-
-
-# =========================================================
-#                        MAIN
-# =========================================================
 
 if __name__ == "__main__":
     root = tk.Tk()
