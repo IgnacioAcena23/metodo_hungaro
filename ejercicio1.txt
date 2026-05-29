@@ -1,0 +1,49 @@
+MINIMIZACIÓN POR EL MÉTODO HÚNGARO
+──────────────────────────────────
+
+Asignaciones óptimas:
+
+  Programador 1  →  Tarea 4
+    Costo: 7
+  Programador 2  →  Tarea 3
+    Costo: 12
+  Programador 3  →  Tarea 1
+    Costo: 6
+  Programador 4  →  Tarea 2
+    Costo: 13
+
+──────────────────────────────────
+
+Iteraciones del método:
+
+  Matriz tras reducción por filas y columnas:
+       3    4    1    0
+       3    3    0    0
+       0    4    5    2
+       0    0    4    1
+
+  Líneas de cobertura suficientes (4 >= 4). Óptimo encontrado.
+       3    4    1    0
+       3    3    0    0
+       0    4    5    2
+       0    0    4    1
+
+──────────────────────────────────
+  Costo total mínimo: 38
+
+ Análisis IA:
+  **Solución óptima**
+  
+  La solución óptima consiste en asignar a cada trabajador (programador) una tarea específica de manera que se minimice el valor total de la asignación. En este caso, el valor óptimo total es 38.
+  
+  **Interpretación**
+  
+  En términos prácticos, esto significa que se ha encontrado la asignación más eficiente posible entre los programadores y las tareas, de manera que se minimice el costo o el tiempo necesario para completar cada tarea.
+  
+  **Sentido de las asignaciones**
+  
+  La solución óptima tiene sentido para minimizar el resultado, ya que asigna a cada trabajador la tarea que tiene un valor más bajo. Sin embargo, no necesariamente tiene sentido para maximizar el resultado, ya que no se asigna a cada trabajador la tarea que tenga un valor más alto.
+  
+  En resumen, la solución óptima es adecuada para minimizar el valor total de la asignación, pero puede no ser la mejor opción para maximizar el resultado.
+
+──────────────────────────────────
